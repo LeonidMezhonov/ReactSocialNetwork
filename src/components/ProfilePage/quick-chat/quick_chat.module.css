@@ -1,0 +1,8 @@
+.chat {
+    width: 373px;
+    min-height: 94vh;
+    border-radius: 35px;
+    background-color: white;
+    
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+}

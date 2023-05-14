@@ -1,0 +1,14 @@
+.dialogs {
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.item {
+    font-size: 20px;
+    letter-spacing: 0.11em;
+    margin-bottom: 40px;
+}
+
+.dialogs .active {
+    color: gray;
+}
