@@ -7,7 +7,7 @@ import s from './profilepage.module.css'
 const ProfilePage = (props) => {
     return (
         <div className={s.wrap}>
-            <ContentProfile state={props.state} addPost={props.addPost} updatePost={props.updatePost}/>
+            <ContentProfile state={props.state} dispatch={props.dispatch} />
             <QuickChat />
         </div>
     )

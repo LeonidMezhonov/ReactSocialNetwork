@@ -17,8 +17,7 @@ function App(props) {
           <Routes>
             <Route path='/profile' element={<ProfilePage 
               state={props.state.profilePage}
-              addPost={props.addPost}
-              updatePost={props.updatePost}/>} />
+              dispatch={props.dispatch}/>} />
             <Route path='/messages/*' element={<MessagesPage 
               state={props.state.messagesPage}/>}/>
           </Routes>

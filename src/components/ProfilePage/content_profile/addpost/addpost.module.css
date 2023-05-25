@@ -27,7 +27,7 @@
   
 .btnwrap {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     margin: 10px 26px 0px 0px;
 }
   
