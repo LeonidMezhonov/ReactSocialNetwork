@@ -1,17 +1,27 @@
 .block {
-    display: grid;
-    grid-template-columns: 5fr 5px 10fr;
-
-    position: relative;
-    width: 970px;
+    display: flex;
+    gap: 20px;
     min-height: 94vh;
-    border-radius: 35px;
+}
+
+.dialogs {
+    width: 300px;
     background-color: white;
-    
+    border-radius: 35px;
+
     box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.block::before {
+.messages {
+    width: 670px;
+    background-color: white;
+    border-radius: 35px;
+
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/* .block::before {
     content: "";
     position: absolute;
     top: 0;
@@ -19,4 +29,4 @@
     height: 100%;
     border-left: 1px solid black;
     transform: translateX(-50%);
-  }
+  } */

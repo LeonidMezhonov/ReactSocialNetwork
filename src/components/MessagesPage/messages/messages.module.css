@@ -1,10 +1,52 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.messageArea {
+    width: 560px;
+    height: 70px;
+    /* margin: 26px; */
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background-color: #DCDCDC;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+  
+    color: rgba(0, 0, 0, 0.38);
+    
+    resize: none;
+}
+
+.sendBtn {
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    
+    width: 70px;
+    height: 70px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    background-color: #DCDCDC;
+}
+
 .messages {
-    margin: 0 auto;
-    padding-top: 100px;
+    width: 100%;
+    height: calc(94vh - 90px);
+    overflow: auto;
 }
 
 .message {
     font-size: 20px;
     letter-spacing: 0.11em;
     margin-bottom: 40px;
+}
+
+.messageBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 100px 40px 0px 0px;
 }

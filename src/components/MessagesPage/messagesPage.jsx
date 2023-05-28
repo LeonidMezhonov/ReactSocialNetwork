@@ -8,9 +8,14 @@ const MessagesPage = (props) => {
     return (
         <div className={s.wrap}>
             <div className={s.block}>
-               <Contacts dialogData={props.state.dialogData}/> 
-               <div className={s.vl}></div> 
-               <Messages messagesData={props.state.messagesData}/>
+                <div className={s.dialogs}>
+                   <Contacts dialogData={props.state.dialogData}/> 
+                </div>
+                <div className={s.messages}>
+                   <Messages messagesData={props.state.messagesData}
+                             dispatch={props.dispatch}
+                             newMessage={props.state.newMessage}/> 
+                </div>
             </div>
         </div>
     )
