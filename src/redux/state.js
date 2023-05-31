@@ -42,30 +42,11 @@ let store = {
         this._callSubscriber = observer;
     },
     dispatch(action) {
-
         this._state.profilePage = profileReducer(this._state.profilePage, action);
         this._state.messagesPage = dialogsReducer(this._state.messagesPage, action);
 
         this._callSubscriber(this._state);
     }, 
-}
-
-export let addPostActionCreator = () => ({ type: ADD_POST, });
-
-export let updateNewPostTextActionCreator = (text) => {
-    return { 
-        type: UPDATE_NEW_POST_TEXT, 
-        newText: text,
-    }
-}
-
-export let sendMessageActionCreator = () => ({ type: SEND_MESSAGE });
-
-export let updateMessageTextActionCreator = (text) => {
-    return {
-        type: UPDATE_MESSAGE_TEXT,
-        newText: text,
-    }
 }
 
 export default store;

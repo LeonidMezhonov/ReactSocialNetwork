@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Contacts from './contacts/contacts';
-import Messages from './messages/messages';
+import MessagesContainer from './messages/messagesContainer';
 import s from './messages_block.module.css'
 
 const MessagesPage = (props) => {
@@ -12,9 +12,7 @@ const MessagesPage = (props) => {
                    <Contacts dialogData={props.state.dialogData}/> 
                 </div>
                 <div className={s.messages}>
-                   <Messages messagesData={props.state.messagesData}
-                             dispatch={props.dispatch}
-                             newMessage={props.state.newMessage}/> 
+                   <MessagesContainer store={props.store}/> 
                 </div>
             </div>
         </div>

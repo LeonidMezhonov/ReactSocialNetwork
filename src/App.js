@@ -16,9 +16,9 @@ function App(props) {
           <Navbar />
           <Routes>
             <Route path='/profile' element={<ProfilePage 
-              state={props.state.profilePage}
-              dispatch={props.dispatch}/>} />
+              store={props.store}/>} />
             <Route path='/messages/*' element={<MessagesPage 
+              store={props.store}
               state={props.state.messagesPage}
               dispatch={props.dispatch}/>}/>
           </Routes>
