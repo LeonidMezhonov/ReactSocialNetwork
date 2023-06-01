@@ -7,7 +7,7 @@ import s from './profilepage.module.css'
 const ProfilePage = (props) => {
     return (
         <div className={s.wrap}>
-            <ContentProfile store={props.store} />
+            <ContentProfile />
             <QuickChat />
         </div>
     )

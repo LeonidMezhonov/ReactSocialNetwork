@@ -12,9 +12,9 @@ const PostItem = (props) => {
 } 
 
 const Posts = (props) => {
-    let state = props.store.getState();
-    let postsData = state.profilePage.postsData;
-    let postElements = postsData
+    // let state = props.store.getState();
+    // let postsData = state.profilePage.postsData;
+    let postElements = props.postsData
         .map ( p => <PostItem text={p.post}/>);
 
     return (

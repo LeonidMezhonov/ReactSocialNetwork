@@ -15,12 +15,8 @@ function App(props) {
         <div className = 'wrap'>
           <Navbar />
           <Routes>
-            <Route path='/profile' element={<ProfilePage 
-              store={props.store}/>} />
-            <Route path='/messages/*' element={<MessagesPage 
-              store={props.store}
-              state={props.state.messagesPage}
-              dispatch={props.dispatch}/>}/>
+            <Route path='/profile' element={<ProfilePage />} />
+            <Route path='/messages/*' element={<MessagesPage />}/>
           </Routes>
         </div>
       </div>
