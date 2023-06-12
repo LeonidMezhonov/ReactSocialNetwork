@@ -1,0 +1,80 @@
+.wrap {
+    width: 966px;
+    min-height: 94vh;
+    border-radius: 35px;
+    background-color: white;
+    margin: 0 auto;
+    
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.user {
+    display: flex;
+    justify-content: space-between;
+    width: min(100% - 15px, 650px);
+    margin-inline: auto;
+    margin-top: 50px;
+}
+
+.btnUnfollow {
+    width: 80px;
+    height: 173px;
+    background-color: #949398FF;
+    border-radius: 35px;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.btnFollow {
+    width: 80px;
+    height: 173px;
+    background-color: #F4DF4EFF;
+    border-radius: 35px;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.userInfo {
+    display: flex;
+    width: min(100% - 15px, 564px);
+    
+    height: 173px;
+    border-radius: 35px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+}
+  
+.picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #DCDCDC;
+}
+
+img {
+    width: 110px;
+}
+  
+.text {
+    text-align: center;
+}
+  
+.name {
+    font-size: 20px;
+    letter-spacing: 0.11em;
+    font-weight: 600;
+}
+  
+.quote {
+    font-size: 15px;
+    letter-spacing: 0.05em;
+}
+  
+.location {
+    font-size: 15px;
+    letter-spacing: 0.05em;
+}

@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import Chat from './chat/chat';
 import s from './quick_chat.module.css'
 

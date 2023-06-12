@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import { NavLink } from 'react-router-dom';
 import s from './navlinks.module.css'
 
@@ -9,6 +8,9 @@ const Navlinks = () => {
             <nav>
                 <div className={s.item}>
                     <NavLink to="/profile" className = { navData => navData.isActive ? s.active : s.item }>PROFILE</NavLink>
+                </div>
+                <div className={s.item}>
+                    <NavLink to="/findFriends" className = { navData => navData.isActive ? s.active : s.item }>FIND FRIENDS</NavLink>
                 </div>
                 <div className={s.item}>
                     <NavLink to="/messages" className = { navData => navData.isActive ? s.active : s.item }>MESSAGES</NavLink> 
