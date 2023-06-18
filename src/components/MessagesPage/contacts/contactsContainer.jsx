@@ -7,10 +7,6 @@ let mapStateToProps = (state) => {
     }
 }
 
-let mapDispatchToProps = (dispatch) => {
-    return {}
-}
-
-const ContactsContainer = connect(mapStateToProps, mapDispatchToProps) (Contacts);
+const ContactsContainer = connect(mapStateToProps, {}) (Contacts);
 
 export default ContactsContainer;

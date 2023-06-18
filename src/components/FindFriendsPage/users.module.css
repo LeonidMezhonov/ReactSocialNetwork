@@ -16,6 +16,11 @@
     margin-top: 50px;
 }
 
+.user a {
+    width: min(100% - 15px, 545px);
+    margin-inline: auto;
+}
+
 .btnUnfollow {
     width: 80px;
     height: 173px;
@@ -53,6 +58,7 @@
     height: 120px;
     border-radius: 50%;
     background-color: #DCDCDC;
+    overflow: hidden;
 }
 
 img {
@@ -77,4 +83,27 @@ img {
 .location {
     font-size: 15px;
     letter-spacing: 0.05em;
+}
+
+.pages {
+    display: flex;
+    justify-content: space-between;
+    width: min(100% - 15px, 500px);
+    margin-inline: auto;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.selectedPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    width: 180px;
+    height: 80px;
+    background-color: #F4DF4EFF;
+    border-radius: 35px;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
 }
