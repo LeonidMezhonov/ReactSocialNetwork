@@ -15,7 +15,7 @@ function App(props) {
         <div className = 'wrap'>
           <Navbar />
           <Routes>
-            <Route path='/profile/:profileId' element={<ProfilePage />} />
+            <Route path='/profile/:userId?' element={<ProfilePage />} />
             {/* <Route path='/profile/' element={<ProfilePage />} /> */}
             <Route path='/findFriends' element={<UsersContainer />} />
             <Route path='/messages/*' element={<MessagesPage />}/>
