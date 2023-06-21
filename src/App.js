@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react';
 import Navbar from './components/navbar/navbar';
 import MessagesPage from './components/MessagesPage/messagesPage';
 import { Route, Routes } from 'react-router';
