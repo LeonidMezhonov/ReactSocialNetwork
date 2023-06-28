@@ -1,6 +1,6 @@
-import axios from 'axios';
 import React from 'react';
 import { connect } from 'react-redux';
+import { getUsers } from '../../api/api';
 import Preloader from '../../common/preloader/Preloader';
 import { follow, setCurrentPage, setUsers, unfollow, setTotalUsersCount, toggleIsFetching } from '../../redux/users-reducer';
 import Users from './users';
@@ -8,10 +8,9 @@ import Users from './users';
 class UsersContainer extends React.Component {
     componentDidMount() {
         this.props.toggleIsFetching(true);
-        axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${this.props.currentPage}&count=${this.props.pageSize}`)
-            .then(response => {
+        getUsers(this.props.currentPage, this.props.pageSize).then(data => {
                 this.props.toggleIsFetching(false);
-                this.props.setUsers(response.data.items);
+                this.props.setUsers(data.items);
             });
     }
 
@@ -19,10 +18,9 @@ class UsersContainer extends React.Component {
         let pageNum = pageNumber + 1;
         this.props.toggleIsFetching(true);
         this.props.setCurrentPage(pageNum);
-        axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${pageNum}&count=${this.props.pageSize}`)
-            .then(response => {
+        getUsers(pageNum, this.props.pageSize).then(data => {
                 this.props.toggleIsFetching(false);
-                this.props.setUsers(response.data.items);
+                this.props.setUsers(data.items);
             });
     }
 
@@ -33,10 +31,9 @@ class UsersContainer extends React.Component {
         }
         this.props.toggleIsFetching(true);
         this.props.setCurrentPage(pageNum);
-        axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${pageNum}&count=${this.props.pageSize}`)
-            .then(response => {
+        getUsers(pageNum, this.props.pageSize).then(data => {
                 this.props.toggleIsFetching(false);
-                this.props.setUsers(response.data.items);
+                this.props.setUsers(data.items);
             });
     }
 

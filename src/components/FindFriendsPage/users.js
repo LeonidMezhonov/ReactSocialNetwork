@@ -2,6 +2,7 @@ import React from 'react'
 import s from './users.module.css'
 import userphoto from '../../Assets/images/user.png'
 import { NavLink } from 'react-router-dom'
+import { follow, unfollow } from '../../api/api'
 
 let Users = (props) => {
     return <div className={s.wrap}>
@@ -9,8 +10,25 @@ let Users = (props) => {
         props.users.map(u => <div key={u.id}>
             <div className={s.user}>
                 <div>
-                    {u.followed ? <button className={s.btnUnfollow} onClick={() => {props.unfollow(u.id)}}>UNFOLLOW</button> 
-                    : <button className={s.btnFollow} onClick={() => {props.follow(u.id)}}>FOLLOW</button>}
+                    {u.followed ? 
+                    <button className={s.btnUnfollow} onClick={ () => {
+                        unfollow(u.id).then(data => {
+                            if (data.resultCode === 0) {
+                                props.unfollow(u.id)
+                            }
+                        }); 
+                    }
+
+                    }>FOLLOWED</button> 
+                    : <button className={s.btnFollow} onClick={ () => {
+                        follow(u.id).then(data => {
+                            if (data.resultCode === 0) {
+                                props.follow(u.id)
+                            }
+                        }); 
+                    }
+                        
+                    }>FOLLOW</button>}
                 </div>
                 <NavLink to={'/profile/' + u.id}>
                     <div className={s.userInfo}>
