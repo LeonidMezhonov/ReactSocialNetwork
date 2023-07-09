@@ -34,13 +34,13 @@ h6 {
 
 html,
 body {
-  background-color: #DCDCDC;
+  background-color: #dcdcdc;
 }
 
 .container {
   display: flex;
   margin: 20px 0px;
-  min-height: 94vh;
+  min-height: 90vh;
 }
 
 .wrap {
@@ -49,4 +49,3 @@ body {
   gap: 29px;
   margin: 0 auto;
 }
-

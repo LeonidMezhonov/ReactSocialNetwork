@@ -1,0 +1,19 @@
+.wrap {
+  width: 966px;
+  min-height: 94vh;
+  border-radius: 35px;
+  background-color: white;
+  margin: 0 auto;
+
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.welcomeText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 30px;
+  letter-spacing: 0.11em;
+  font-weight: 600;
+}

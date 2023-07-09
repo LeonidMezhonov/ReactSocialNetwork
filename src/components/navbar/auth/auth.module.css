@@ -1,0 +1,24 @@
+.loginBlock {
+  margin-right: 30px;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+}
+
+.loginCenter {
+  width: 1230px;
+  margin: 0 auto;
+}
+
+.loginWrap {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  min-height: 10vh;
+  border-radius: 20px;
+  background-color: white;
+  margin: 10px 0px;
+
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+}
