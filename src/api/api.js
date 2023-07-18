@@ -22,6 +22,18 @@ export const getProfileAPI = (userId) => {
   });
 };
 
+export const getStatusAPI = (userId) => {
+  return instance.get(`profile/status/${userId}`).then((responce) => {
+    return responce.data;
+  })
+}
+
+export const updateStatusAPI = (status) => {
+  return instance.put(`profile/status`, {status}).then((responce) => {
+    return responce.data;
+  })
+}
+
 export const followAPI = (userId) => {
   return instance.post(`follow/${userId}`, {}).then((responce) => {
     return responce.data;
