@@ -8,6 +8,7 @@ import Login from "./components/Login/login";
 import ProfilePage from "./components/ProfilePage/profilepageContainer";
 import MessagesPage from "./components/MessagesPage/messagesPageContainer";
 import LogInContainer from "./components/navbar/auth/authContainer";
+import Welcome from "./components/navbar/welcomePage/welcome";
 
 function App(props) {
   return (
@@ -17,6 +18,7 @@ function App(props) {
         <div className="wrap">
           <Navbar />
           <Routes>
+            <Route path="/" element={<Welcome />} />
             <Route path="/profile/:userId?" element={<ProfilePage />} />
             <Route path="/findFriends" element={<UsersContainer />} />
             <Route path="/messages/*" element={<MessagesPage />} />
