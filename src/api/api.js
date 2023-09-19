@@ -25,14 +25,14 @@ export const getProfileAPI = (userId) => {
 export const getStatusAPI = (userId) => {
   return instance.get(`profile/status/${userId}`).then((responce) => {
     return responce.data;
-  })
-}
+  });
+};
 
 export const updateStatusAPI = (status) => {
-  return instance.put(`profile/status`, {status}).then((responce) => {
+  return instance.put(`profile/status`, { status }).then((responce) => {
     return responce.data;
-  })
-}
+  });
+};
 
 export const followAPI = (userId) => {
   return instance.post(`follow/${userId}`, {}).then((responce) => {
@@ -48,6 +48,20 @@ export const unfollowAPI = (userId) => {
 
 export const authAPI = () => {
   return instance.get(`auth/me`).then((responce) => {
+    return responce.data;
+  });
+};
+
+export const loginAPI = (email, password, rememberMe = false) => {
+  return instance
+    .post(`auth/login`, { email, password, rememberMe })
+    .then((responce) => {
+      return responce.data;
+    });
+};
+
+export const logoutAPI = () => {
+  return instance.delete(`auth/login`).then((responce) => {
     return responce.data;
   });
 };

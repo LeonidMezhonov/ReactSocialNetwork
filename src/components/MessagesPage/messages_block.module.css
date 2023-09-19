@@ -5,7 +5,7 @@
 }
 
 .dialogs {
-    width: 300px;
+    min-width: 260px;
     background-color: white;
     border-radius: 35px;
 

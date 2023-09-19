@@ -1,5 +1,5 @@
 .wrap {
-  width: 966px;
+  max-width: 966px;
   min-height: 94vh;
   border-radius: 35px;
   background-color: white;
@@ -9,11 +9,15 @@
 }
 
 .welcomeText {
+  min-height: 94vh;
+
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 
-  font-size: 30px;
+  font-size: 25px;
+  line-height: 1.8;
   letter-spacing: 0.11em;
   font-weight: 600;
 }

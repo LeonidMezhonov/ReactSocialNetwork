@@ -1,6 +1,6 @@
 .profile {
   display: flex;
-  width: 564px;
+  max-width: 564px;
   height: 173px;
   border-radius: 35px;
   background-color: white;

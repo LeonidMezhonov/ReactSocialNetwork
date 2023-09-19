@@ -5,10 +5,10 @@ const Welcome = () => {
   return (
     <div className={s.wrap}>
       <div className={s.welcomeText}>
-        <h1>Hello everyone!</h1>
-        <p>Welcome to my project.</p>
-        <p>Here you can see the prototype of my social network.</p>
-        <p>Enjoy!</p>
+        <h1>HELLO EVERYONE!</h1>
+        <p>WELCOME TO MY PROJECT.</p>
+        <p>HERE YOU CAN SEE THE PROTOTYPE OF MY SOCIAL NETWORK.</p>
+        <p>ENJOY!</p>
       </div>
     </div>
   );

@@ -1,43 +1,43 @@
 .textarea {
-    width: 564px;
-    height: 276px;
-    border-radius: 35px;
-    background-color: white;
-    margin: 0px 0px 33px 0px;
-    
-    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+  max-width: 564px;
+  height: 276px;
+  border-radius: 35px;
+  background-color: white;
+  margin: 0px 0px 33px 0px;
+
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
 }
-  
+
 .postarea {
-    width: 508px;
-    height: 150px;
-    margin: 26px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 20px;
-    background-color: #DCDCDC;
-    font-size: 15px;
-    letter-spacing: 0.05em;
-  
-    color: rgba(0, 0, 0, 0.38);
-    
-    resize: none;
+  width: 508px;
+  height: 150px;
+  margin: 26px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  background-color: #dcdcdc;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+
+  color: rgba(0, 0, 0, 0.38);
+
+  resize: none;
 }
-  
+
 .btnwrap {
-    display: flex;
-    justify-content: flex-end;
-    margin: 10px 26px 0px 0px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 26px 0px 0px;
 }
-  
+
 .addbutton {
-    font-size: 15px;
-    letter-spacing: 0.05em;
-    
-    width: 137px;
-    height: 39px;
-    border: 2px solid #ccc;
-    border-radius: 12px;
-    background-color: #DCDCDC;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+
+  width: 137px;
+  height: 39px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  background-color: #dcdcdc;
 }
