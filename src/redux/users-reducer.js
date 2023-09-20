@@ -110,7 +110,7 @@ export let toggleFollowingInProgress = (isFetching, userId) => ({
 
 // redux-thunk
 
-export const getUsers = (currentPage, pageSize) => {
+export const requestUsers = (currentPage, pageSize) => {
   return (dispatch) => {
     dispatch(toggleIsFetching(true));
     dispatch(setCurrentPage(currentPage));
