@@ -1,4 +1,4 @@
-import { authAPI, loginAPI, logoutAPI } from "../api/api";
+import { authAPI, loginAPI, logoutAPI } from "../api/api.js";
 
 const SET_USER_DATA = "SET-USER-DATA";
 

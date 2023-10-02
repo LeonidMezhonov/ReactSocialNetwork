@@ -28,7 +28,7 @@ const AddPostForm = (props) => {
   );
 };
 
-const Addpost = (props) => {
+const Addpost = React.memo((props) => {
   let addPost = (newPost) => {
     props.addPost(newPost);
   };
@@ -38,6 +38,27 @@ const Addpost = (props) => {
       <AddPostForm addPost={addPost} />
     </div>
   );
-};
+});
+
+// class Addpost extends React.PureComponent {
+
+//   // If we are using React.Component, with React.PureComponent we shouldn't use this method:
+
+//   // shouldComponentUpdate(nextProps, nextState) {
+//   //   return nextProps !== this.props || nextState !== this.state;
+//   // }
+
+//   render() {
+//     let addPost = (newPost) => {
+//       this.props.addPost(newPost);
+//     };
+
+//     return (
+//       <div className={s.textarea}>
+//         <AddPostForm addPost={addPost} />
+//       </div>
+//     );
+//   }
+// }
 
 export default Addpost;

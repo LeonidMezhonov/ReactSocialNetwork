@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "./logo/logo";
 import Navlinks from "./navlinks/navlinks";
 import s from "./navbar.module.css";
-import Welcome from "./welcomePage/welcome";
+// import Welcome from "./welcomePage/welcome";
 
 const Navbar = () => {
   return (
